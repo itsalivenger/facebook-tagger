@@ -1,0 +1,14 @@
+{
+    "name": "Facebook tagger",
+    "version": "2.0.3",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [{
+        "js": ["index.js"],
+        "matches": ["https://www.facebook.com/groups*", "https://web.facebook.com/*"],
+        "all_frames": true
+    }
+]
+}
